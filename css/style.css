@@ -9,8 +9,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  /* -webkit-transition: .2s linear;
-  transition: .2s linear; */
+  transition: .2s ease-in-out;
 }
 
 
@@ -25,7 +24,7 @@ html {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.529);
+  background-color: rgba(0, 0, 0, 0.626);
 }
 
 html::-webkit-scrollbar {
@@ -107,6 +106,8 @@ section {
   font-size: 1.6rem;
   position: relative;
   color: #ffffff;
+  transition-property: all;
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
 }
 
 .header .navbar #nav-close {
@@ -815,8 +816,15 @@ section {
 }
 
 @media (max-width: 768px) {
+  .home{
+    height: 50vh;
+  }
+  .home > .swiper > .swiper-wrapper{
+    height: 30vh;
+  }
   .header #menu-btn {
     display: inline-block;
+    color: white;
   }
   .header .navbar {
     position: fixed;
@@ -842,6 +850,7 @@ section {
   }
   .header .navbar.active {
     left: 0;
+    background-color: grey;
     -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
@@ -858,6 +867,35 @@ section {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
+  }
+  .search_bar{
+    position: absolute;
+    top: 9vmax;
+    right: 5vmax;
+  }
+  .search_bar>.in>input::placeholder{
+    color: rgb(220, 220, 220);
+    font-size: 1.4vmax;
+  }
+  .txt_div{
+    line-height: 2.3vmax !important;
+    margin-left: 2.5vmax !important;
+  }
+  .txt_div > h1{
+    font-size: 2vmax !important;
+  }
+  .txt_div > h3{
+    font-size: 1.8vmax !important;
+  }
+  .explore_btn{
+    margin-left: 1.3vmax;
+    margin-top: -0.3vmax !important;
+  }
+  .explore_btn > button{
+    font-size: 1.8vmax !important;
+  }
+  .arr{
+    margin-left: -2vmax !important;
   }
 }
 
@@ -909,6 +947,10 @@ section {
   /* background-color: red; */
 }
 
+.search_bar > .in > input::placeholder{
+  color: #e0e0e0;
+}
+
 .in > input {
   width: 90%;
   color: white;
@@ -921,20 +963,21 @@ section {
 }
 
 .txt_div {
-  line-height: 6.5rem;
-  margin-top: 25rem;
-  margin-left: 15rem;
+  line-height: 5vmax;
+  margin-top: 15vmax;
+  margin-left: 9vmax;
 }
 
 .txt_div > h1 {
+  margin-left: -0.2vmax;
   font-weight: 900;
-  font-size: 6rem;
+  font-size: 4.3vmax;
   color: white;
 }
 
 .txt_div > h3 {
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 3.9vmax;
   color: white;
 }
 
@@ -947,7 +990,7 @@ section {
 }
 
 .explore_btn > button {
-  margin-left: -3.8rem;
+  margin-left: -3.2rem;
   background: none;
   color: white;
   font-size: 2.3rem;
@@ -978,14 +1021,14 @@ section {
 }
 
 #btnhov:hover .pro {
-  width: 100%;
+  width: 90%;
 }
 
 .hidden {
   opacity:0;
 }
 .console-container {
- 
+  display: inline-block;
   font-family:Khula;
   color:white;
 }
