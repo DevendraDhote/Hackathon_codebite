@@ -1039,3 +1039,8 @@ section {
   left:px;
 }
 
+.dd{
+  position: absolute;
+  top: 40%;
+  right: 8%;
+}
