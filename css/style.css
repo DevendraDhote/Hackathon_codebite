@@ -332,17 +332,22 @@ section {
   padding: 0.5vmax;
 }
 
-.info .specs>h2{
+.specs>h2{
   font-size: 2.5rem;
   color: rgb(29, 154, 77);
   text-transform: uppercase;
 }
 
-.info .specs{
+.specs{
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+}
+.infospecs{
+  position: absolute;
+  bottom: -14vh;
 }
 
 .specs .desc{
@@ -369,13 +374,13 @@ section {
   font-size: 1.4rem;
 }
 
-#baler{
-  display: none;
+/* #baler{
+  display: block;
 }
 
 #spread{
-  display: none;
-}
+  display: block;
+} */
 
 .about {
   background: #eee;
@@ -1124,6 +1129,7 @@ section {
 }
 
 .pro_btns{
+  margin-top: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1222,6 +1228,20 @@ section {
 .item-3 {
   background-size: cover;
 }
+.item-4>img{
+  width: 40vmax;
+}
+
+.item-4 {
+  background-size: cover;
+}
+.item-5>img{
+  width: 40vmax;
+}
+
+.item-5 {
+  background-size: cover;
+}
 
 *:target ~ .item-1{
   opacity: 0;
@@ -1230,7 +1250,8 @@ section {
   opacity: 1;
 
 }
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3,#item-4:target ~ .item-4,#item-5:target ~ .item-5 {
   z-index: 3;
   opacity: 1;
 } 
