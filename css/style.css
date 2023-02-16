@@ -507,27 +507,36 @@ section {
 .packages .box-container .box {
   text-align: center;
   background: #fff;
-  border: 0.2rem solid #10221b;
+  /* border: 0.2rem solid #10221b; */
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
 
-.packages .box-container .box:hover {
+/* .packages .box-container .box:hover {
   background: #10221b;
-}
+} */
 
-.packages .box-container .box:hover .content > * {
+/* .packages .box-container .box:hover .content > * {
   color: #fff;
-}
+} */
 
-.packages .box-container .box:hover .btn {
+/* .packages .box-container .box:hover .btn {
   border-color: #fff;
-}
+} */
 
-.packages .box-container .box:hover .btn:hover {
+/* .packages .box-container .box:hover .btn:hover {
   background: #fff;
   color: #10221b;
+} */
+
+.rent_btn{
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.254);
+  border: none;
 }
 
 .packages .box-container .box .image {
