@@ -67,6 +67,15 @@ section {
   color: #10221b;
 }
 
+
+
+
+/*---------------------------------------- Header section css ------------------------------------------------- */
+
+
+
+
+
 .header {
   position: fixed;
   top: 0;
@@ -222,6 +231,16 @@ section {
   color: #219150;
 }
 
+
+
+
+/*---------------------------------------- Home section css ------------------------------------------------- */
+
+
+
+
+
+
 .home {
   padding: 0;
 }
@@ -277,12 +296,20 @@ section {
   color: #3f9574;
 }
 
+
+
+/*---------------------------------------- category section css ------------------------------------------------- */
+
+
+
+
+
 .category {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EEEEEE;
+  background-color: #f3f3f3;
 }
 
 .category > h1 {
@@ -300,7 +327,7 @@ section {
   padding: 1vmax 3.5vmax;
   cursor: pointer;
   border-radius: 50px;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.254);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.152);
   border: none;
 }
 
@@ -340,10 +367,10 @@ section {
 }
 
 .specs {
-  flex-direction: column;
+  /* flex-direction: column; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .infospecs {
   position: absolute;
@@ -356,6 +383,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1vmax;
   /* background-color: red; */
 }
 
@@ -374,13 +402,11 @@ section {
   font-size: 1.4rem;
 }
 
-/* #baler{
-  display: block;
-}
 
-#spread{
-  display: block;
-} */
+
+/*---------------------------------------- about section css ------------------------------------------------- */
+
+
 
 .about {
   background: #eee;
@@ -395,37 +421,61 @@ section {
   gap: 2rem;
 }
 
-.about .image {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 42rem;
-  flex: 1 1 42rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
+.about>h1{
+  font-size: 4rem;
 }
 
-.about .image img {
+.about .mission{
+  height: 20vmax;
   width: 100%;
-  -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about .content {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 42rem;
-  flex: 1 1 42rem;
+.about .mission .miss_explain{
+  height: 100%;
+  width: 60%;
+  background-color: green;
 }
 
-.about .content h3 {
-  font-size: 3rem;
-  color: #219150;
+.about .mission .miss_photos{
+  height: 100%;
+  width: 40%;
+  /* background-color: blue; */
 }
 
-.about .content p {
-  font-size: 1.5rem;
-  color: #10221b;
-  padding: 1rem 0;
-  line-height: 2;
+.about .miss_desc{
+  height: 20vmax;
+  width: 100%;
+  background-color: rgb(37, 116, 142);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.about .miss_desc .txt{
+  height: 100%;
+  width: 40%;
+  background-color: rgb(212, 72, 144);
+}
+
+.about .miss_desc .images{
+  height: 100%;
+  width: 60%;
+  background-color: rgb(202, 107, 30);
+}
+
+
+
+
+/*---------------------------------------- products section css ------------------------------------------------- */
+
+
+
+
+
 
 .products .slide {
   position: relative;
@@ -442,11 +492,14 @@ section {
 .products .slide .image {
   position: relative;
   overflow: hidden;
-  height: 35rem;
+  height: 30rem;
   width: 100%;
 }
 
 .products .slide .image .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   background-color: rgb(241, 241, 241);
@@ -454,12 +507,10 @@ section {
   overflow: hidden;
 }
 
-.products .slide .image img {
+.products .slide .image .photo img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
+  object-fit: contain;
 }
 
 .products .slide .image .icons {
@@ -506,8 +557,16 @@ section {
 
 .products .slide .content .stars i {
   font-size: 1.7rem;
-  color: #10221b;
+  color: #369470;
 }
+
+
+
+/*---------------------------------------- Packages section css ------------------------------------------------- */
+
+
+
+
 
 .packages {
   background: #f3f3f3;
@@ -613,6 +672,14 @@ section {
   line-height: 2;
 } */
 
+
+
+/*---------------------------------------- Review section css ------------------------------------------------- */
+
+
+
+
+
 .reviews .slide .text {
   padding: 2rem;
   font-size: 1.5rem;
@@ -664,6 +731,12 @@ section {
   font-size: 1.5rem;
 }
 
+
+/*---------------------------------------- client section css ------------------------------------------------- */
+
+
+
+
 .clients .silde {
   text-align: center;
 }
@@ -671,6 +744,15 @@ section {
 .clients .silde img {
   height: 12rem;
 }
+
+
+
+/*---------------------------------------- footer section css ------------------------------------------------- */
+
+
+
+
+
 
 .footer {
   background: -webkit-gradient(
