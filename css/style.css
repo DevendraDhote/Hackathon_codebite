@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Gloock&display=swap');
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -428,6 +429,7 @@ section {
 }
 
 .products .slide {
+  position: relative;
   border-radius: 0.8rem;
   box-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.085);
   padding: 0.8rem;
@@ -625,7 +627,7 @@ section {
   z-index: 0;
   margin-bottom: 3rem;
 }
-
+/* 
 .reviews .slide .text::before {
   content: "";
   position: absolute;
@@ -633,10 +635,10 @@ section {
   left: 0.7rem;
   height: 3rem;
   width: 3rem;
-  background: #eee;
+  background: #dd0b0b;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+} */
 
 .reviews .slide .user {
   display: -webkit-box;
@@ -1146,4 +1148,48 @@ section {
 #item-5:target ~ .item-5 {
   z-index: 3;
   opacity: 1;
+}
+
+
+/*------------------------about section------------------*/
+
+.star{
+  
+  color: rgb(70, 172, 26);
+  font-size: 2.5rem;
+}
+.coma{
+  color: rgb(70, 172, 26);
+  font-size: 9vmax;
+  position: absolute;
+  font-family: 'Catamaran', sans-serif;
+  bottom: -8vmax;
+  right: 10px;
+}
+.slide{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(236, 236, 236); */
+    
+    
+}
+.user{
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  top: 0;
+}
+.slide p{
+  margin-top: 2.8vmax;
+  padding-top: 10vmax;
+}
+.slide .text{
+  padding-top: 6vmax !important;
+}
+.starrr{
+  position: absolute;
+  z-index: 2;
+  top: 5.8vmax;
 }
