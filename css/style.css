@@ -281,7 +281,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EEEEEE;
+  background-color: #f3f3f3;
 }
 
 .category > h1 {
@@ -299,7 +299,7 @@ section {
   padding: 1vmax 3.5vmax;
   cursor: pointer;
   border-radius: 50px;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.254);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.152);
   border: none;
 }
 
@@ -339,10 +339,10 @@ section {
 }
 
 .specs {
-  flex-direction: column;
+  /* flex-direction: column; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .infospecs {
   position: absolute;
@@ -355,6 +355,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1vmax;
   /* background-color: red; */
 }
 
@@ -440,11 +441,14 @@ section {
 .products .slide .image {
   position: relative;
   overflow: hidden;
-  height: 35rem;
+  height: 30rem;
   width: 100%;
 }
 
 .products .slide .image .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   background-color: rgb(241, 241, 241);
@@ -452,12 +456,10 @@ section {
   overflow: hidden;
 }
 
-.products .slide .image img {
+.products .slide .image .photo img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
+  object-fit: contain;
 }
 
 .products .slide .image .icons {
@@ -504,7 +506,7 @@ section {
 
 .products .slide .content .stars i {
   font-size: 1.7rem;
-  color: #10221b;
+  color: #369470;
 }
 
 .packages {
