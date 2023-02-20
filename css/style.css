@@ -409,6 +409,8 @@ section {
 
 
 .about {
+  height: 100vh;
+  width: 100vw;
   background: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,58 +418,181 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 2rem;
 }
 
-.about>h1{
-  font-size: 4rem;
+.about .left{
+  margin-top: 5vmax;
+  padding-top: 1vmax;
+  height: 100%;
+  width: 45%;
 }
 
-.about .mission{
-  height: 20vmax;
-  width: 100%;
-  background-color: red;
+.about .left>h1{
+  margin-top: -2vmax;
+  font-weight: 400;
+  font-size: 7vmax;
+}
+
+.about .left>h3{
+  margin-top: -1vmax;
+  margin-bottom: 2vmax;
+  font-weight: 500;
+  font-size: 1.8vmax;
+}
+
+.about .left>p{
+  font-size: 1vmax;
+}
+
+.about .downbox{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.about .mission .miss_explain{
-  height: 100%;
-  width: 60%;
-  background-color: green;
-}
-
-.about .mission .miss_photos{
-  height: 100%;
-  width: 40%;
-  /* background-color: blue; */
-}
-
-.about .miss_desc{
-  height: 20vmax;
+  margin-top: 2vmax;
   width: 100%;
-  background-color: rgb(37, 116, 142);
+  height: 50%;
+}
+
+.about .downbox .lft{
+  height: 100%;
+  width: 47%;
+}
+
+.about .downbox .lft>h2{
+  color: #219150;
+  font-size: 2.1vmax;
+  font-weight: 500;
+}
+
+.about .downbox .lft .line{
+  width: 15%;
+  height: 0.2vmax;
+  margin: 0;
+  background-color: #219150;
+}
+
+.about .downbox .lft p{
+  font-size: 0.8vmax;
+  margin-top: 1vmax;
+}
+
+.about .right{
+  margin-top: 5vmax;
+  height: 100%;
+  width: 55%;
+}
+
+.about .right>h1{
+  margin-top: -6vmax;
+  margin-bottom: 3vmax;
+  margin-left: -5vmax;
+  font-size: 2.8vmax;
+}
+
+.about .up{
+  height: 60%;
+  width: 100%;
+  border: 2px solid black;
+  margin-bottom: 1vmax;
+}
+
+.about .down{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  height: 40%;
+  width: 100%;
 }
 
-.about .miss_desc .txt{
+.about .down .l{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.8vmax;
+  height: 70%;
+  width: 56%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.2rem 1rem rgba(118, 118, 118, 0.236);
+}
+
+.about .down .l .ll{
+  overflow: hidden;
   height: 100%;
   width: 40%;
-  background-color: rgb(212, 72, 144);
+  background-color: rgb(101, 92, 92);
 }
 
-.about .miss_desc .images{
+.about .down .l .ll>video{
+  height: 100%;
+  width: 100%;
+  scale: 2;
+  object-fit: cover;
+}
+
+.about .down .l .lr{
+  padding: 0.8vmax;
   height: 100%;
   width: 60%;
-  background-color: rgb(202, 107, 30);
 }
 
+.about .down .l .lr>h3{
+  font-size: 1.6vmax;
+  margin-bottom: 0.3vmax;
+  font-weight: 500;
+}
 
+.about .down .l .lr>p{
+  font-size: 0.7vmax;
+  margin-bottom: 1vmax;
+}
+
+.about .down .l .lr>button{
+  font-size: 0.7vmax;
+  color: #219150;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.4vmax 1vmax;
+  border-radius: 1vmax;
+  background-color: transparent;
+  border: 2px solid #219150;
+}
+
+.about .down .r{
+  padding: 0.5vmax;
+  height: 70%;
+  width: 38%;
+  border-radius: 0.8vmax;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.2rem 1rem rgba(118, 118, 118, 0.236);
+}
+
+.about .down .r>h4{
+  font-size: 0.9vmax;
+  color: #219150;
+}
+
+.about .down .r #more{
+  margin-left: 10vmax;
+  color: grey;
+  font-size: 0.8vmax;
+  cursor: pointer;
+}
+
+.about .down .r>h3{
+  margin-top: 0.7vmax;
+  font-size: 1.5vmax;
+  font-weight: 500;
+}
+
+.about .down .r>p{
+  font-size: 0.7vmax;
+  margin-bottom: 1vmax;
+}
+
+.about .down .r>i{
+  font-size: 1.2vmax;
+  color: #219150;
+  font-weight: 700;
+}
 
 
 /*---------------------------------------- products section css ------------------------------------------------- */
@@ -684,8 +809,8 @@ section {
   padding: 2rem;
   font-size: 1.5rem;
   font-style: italic;
-  background: #eee;
-  border-radius: 0.5rem;
+  background: #f6f6f6;
+  border-radius: 1rem;
   color: #10221b;
   line-height: 2;
   position: relative;
