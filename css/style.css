@@ -986,7 +986,7 @@ section {
 
 @media (max-width: 768px) {
   .home {
-    height: 50vh;
+    height: 30vh;
   }
   .home > .swiper > .swiper-wrapper {
     height: 30vh;
@@ -1089,6 +1089,16 @@ section {
   .about .right{
     width: 100%;
     margin-top: 0;
+  }
+  .slide .text{
+    padding: 5vmax !important;
+    margin-top: 6vmax !important;
+  }
+  .starrr{
+    margin-top: 2.5vmax;
+  }
+  .coma{
+    bottom: -7vmax !important;
   }
 }
 
