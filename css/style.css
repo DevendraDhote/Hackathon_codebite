@@ -491,10 +491,27 @@ section {
 }
 
 .about .up{
+  position: relative;
   height: 60%;
   width: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-color: rgb(216, 216, 216);
   margin-bottom: 1vmax;
+  border-radius: 1vmax;
+  background-image: url("https://images.unsplash.com/photo-1520881363902-a0ff4e722963?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.about .up>img{
+  position: absolute;
+  border-radius: 1vmax;
+  top: -3%;
+  right: -2%;
+  height: 95%;
+  width: 75%;
+  object-fit: fill;
+  box-shadow: 0 0.5vmax 0.8vmax rgba(0, 0, 0, 0.377);
 }
 
 .about .down{
@@ -861,14 +878,18 @@ section {
 /*---------------------------------------- client section css ------------------------------------------------- */
 
 
-
+.clients{
+  background-color: #EEEEEE;
+}
 
 .clients .silde {
   text-align: center;
 }
 
 .clients .silde img {
-  height: 12rem;
+  height: 5rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 
