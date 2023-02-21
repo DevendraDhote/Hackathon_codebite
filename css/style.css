@@ -445,6 +445,14 @@ section {
   font-size: 1vmax;
 }
 
+.about .left>h5{
+  text-align: end;
+  margin-right: -8vmax !important;
+  margin-top: -6vmax;
+  margin-bottom: 3vmax;
+  font-size: 2.8vmax;
+}
+
 .about .downbox{
   display: flex;
   justify-content: space-between;
@@ -480,13 +488,6 @@ section {
   margin-top: 5vmax;
   height: 100%;
   width: 55%;
-}
-
-.about .right>h1{
-  margin-top: -6vmax;
-  margin-bottom: 3vmax;
-  margin-left: -5vmax;
-  font-size: 2.8vmax;
 }
 
 .about .up{
@@ -978,6 +979,9 @@ section {
   .home .box .content h3 {
     font-size: 4rem;
   }
+  .about{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1071,6 +1075,20 @@ section {
   }
   .fas {
     display: initial !important;
+  }
+  .about{
+    flex-direction: column;
+  }
+  .about .left{
+    width: 100%;
+  }
+  .about .left>h5{
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  .about .right{
+    width: 100%;
+    margin-top: 0;
   }
 }
 
