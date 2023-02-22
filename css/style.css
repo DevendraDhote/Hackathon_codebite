@@ -64,6 +64,7 @@ section {
   margin-bottom:rem;
   font-size: 4rem;
   color: #10221b;
+  opacity: 1;
 }
 
 
@@ -1482,6 +1483,7 @@ section {
   align-items: center;
   height: 70vh;
   overflow: hidden;
+  margin-left: 100vmax;
 }
 
 .carousel-main.slide-effect {

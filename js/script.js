@@ -1,3 +1,32 @@
+//----------------- gsab schroll trigger-----------------//
+
+
+
+
+var tl = gsap.timeline({scrollTrigger:{
+  trigger:".cBody",
+  markers:true,
+  start:"-10% 85%",
+  end:"90% 85%",
+  scrub:1,
+}});
+tl.to("#firshheading",{
+  opacity:1,
+})
+.to(".carousel",{
+  marginLeft: "0vmax"
+})
+
+
+
+
+
+
+//----------------- gsab schroll trigger end-----------------//
+
+
+
+
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
