@@ -60,6 +60,7 @@ section {
 }
 
 .heading {
+  text-align: center;
   margin-bottom:rem;
   font-size: 4rem;
   color: #10221b;
@@ -338,7 +339,7 @@ section {
 .podium {
   position: absolute;
   z-index: -1;
-  margin-top:12vmax;
+  margin-top:7vmax;
   height: 3vmax;
   width: 50vmax;
   background-color: rgb(228, 228, 228);
@@ -368,7 +369,7 @@ section {
 
 .specs {
   /* flex-direction: column; */
-  
+  margin-top: 3vmax;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -1369,6 +1370,7 @@ section {
 }
 
 .item-3 > img {
+  transform: scale(1.5);
   width: 40vmax;
 }
 
@@ -1465,7 +1467,6 @@ section {
 
 .cBody{
   font-family: sans-serif;
-  
   min-height: 80vh;
   display: flex;
   justify-content: center;
@@ -1479,7 +1480,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -1491,10 +1492,48 @@ section {
   margin: 1em;
   
 }
+@media screen and (max-width: 480px) {
+  body{
+    /* background-color: #000; */
+  }
+  .item-3 > img {
+    transform: scale(.7);
+    
+  }
+  
+
+  .carousel .carousel-button svg {
+    fill: #07070777;
+    width: 20px !important;
+    height: 20px !important;
+   
+
+  }
+  .item-1 > img{
+    width: 40vmax;
+  }
+  .podium{
+    margin-top: -8vmax;   
+  }
+  .specs .desc{
+    width: 69vw;
+  }
+  #left{
+    position: absolute;
+    left: 5%;
+    top: 63%;
+  }
+  #right{
+    position: absolute;
+    right: 5%;
+    width: 20px;
+    top: 63%;
+  }
+}
 
 .carousel-main.slide-effect .carousel-item {
   min-width: 700px;
-  height: 100%;
+  height: 35vh;
   opacity: 0.5;
   transform: translateX(0);
   transition: all 0.5s ease-in-out;
@@ -1548,15 +1587,21 @@ section {
 
 .carousel .carousel-button {
   border: none;
-  background: none;
+  
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   z-index: 5;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(94, 94, 94, 0.358);
+  background-color: none !important;
 }
 
 .carousel .carousel-button svg {
   fill: #07070777;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
 }
 
 .carousel .carousel-button:disabled {
