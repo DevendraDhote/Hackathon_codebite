@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,271 +27,112 @@
     <link rel="stylesheet" href="styles.scss" />
   </head>
   <body>
-    <!--------------- header section starts --------------------------->
+    <!-- <div class="lod">
+      <div class="loader"></div>
+    </div> -->
 
-    <header class="header">
-      <a href="#" class="logo">
-        <img src="./images/logo.svg" alt="" />
-      </a>
+    <div id="smooth-wrapper">
+      <!--------------- header section starts --------------------------->
 
-      <nav class="navbar">
-        <div id="nav-close" class="fas fa-times"></div>
-        <a href="#home">home</a>
-        <a href="#products">Products</a>
-        <a href="#">becoem a seller</a>
-        <a href="#about">about</a>
-        <a href="#reviews">reviews</a>
-      </nav>
+      <header class="header">
+        <a href="#" class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </a>
 
-      <div class="search_bar">
-        <div class="in">
-          <input type="search" placeholder="Searh Products" />
-          <i class="ri-search-line srch"></i>
+        <nav class="navbar">
+          <div id="nav-close" class="fas fa-times"></div>
+          <a href="#home">home</a>
+          <a href="#products">Products</a>
+          <a href="#">become a seller</a>
+          <a href="#about">about</a>
+          <a href="#reviews">reviews</a>
+        </nav>
+
+        <div class="search_bar">
+          <div class="in">
+            <input type="search" placeholder="Searh Products" />
+            <i class="ri-search-line srch"></i>
+          </div>
         </div>
+
+        <div class="icons">
+          <div
+            id="search-btn"
+            style="display: none; color: rgb(230, 230, 230)"
+            class="fas fa-search"
+          ></div>
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <a
+            href="#"
+            style="color: white; font-size: 18px"
+            class="fas fa-shopping-cart"
+          ></a>
+          <a
+            href="#"
+            style="color: white; font-size: 18px"
+            class="fas fa-light fa-user"
+          ></a>
+        </div>
+      </header>
+
+      <!--------------- header section ends--------------------------->
+
+      <!--------------- search form --------------------------->
+
+      <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+
+        <form action="">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
       </div>
 
-      <div class="icons">
-        <div
-          id="search-btn"
-          style="display: none; color: rgb(230, 230, 230)"
-          class="fas fa-search"
-        ></div>
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <a
-          href="#"
-          style="color: white; font-size: 18px"
-          class="fas fa-shopping-cart"
-        ></a>
-        <a
-          href="#"
-          style="color: white; font-size: 18px"
-          class="fas fa-light fa-user"
-        ></a>
-      </div>
-    </header>
+      <!--------------- home section starts --------------------------->
 
-    <!--------------- header section ends--------------------------->
-
-    <!--------------- search form --------------------------->
-
-    <div class="search-form">
-      <div id="close-search" class="fas fa-times"></div>
-
-      <form action="">
-        <input
-          type="search"
-          name=""
-          placeholder="search here..."
-          id="search-box"
-        />
-        <label for="search-box" class="fas fa-search"></label>
-      </form>
-    </div>
-
-    <!--------------- home section starts --------------------------->
-
-    <section class="home" id="home">
-      <div class="swiper home-slider">
-        <div class="swiper-wrapper">
-          <video style="width: 100%" autoplay loop muted>
-            <source src="videos/final-one.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="overlay">
-            <div class="txt_div">
-              <h1>One Stop Shop for Farmers</h1>
-              <h3>
-                <div class="console-container">
-                  <span id="text"></span>
-                  <div class="console-underscore" id="console">&#95;</div>
-                </div>
-                Equipments
-              </h3>
-
-              <h3>with Trust.</h3>
-              <div class="explore_btn">
-                <button href="#about" id="btnhov" type="submit">
-                  Explore
-                  <div class="line">
-                    <div class="pro"></div>
+      <section class="home" id="home">
+        <div class="swiper home-slider">
+          <div class="swiper-wrapper">
+            <video id="vid" style="width: 100%" autoplay loop muted>
+              <source src="videos/final-one.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="txt_div">
+                <h1 id="head1">One Stop Shop for Farmers</h1>
+                <h3 id="head2">
+                  <div class="console-container">
+                    <span id="text"></span>
+                    <div class="console-underscore" id="console">&#95;</div>
                   </div>
-                </button>
-                <i class="ri-arrow-right-line arr"></i>
+                  Equipments
+                </h3>
+
+                <h3 id="head3">with Trust.</h3>
+                <div class="explore_btn">
+                  <button href="#about" id="btnhov" type="submit">
+                    Explore
+                    <div class="line">
+                      <div class="pro"></div>
+                    </div>
+                  </button>
+                  <i class="ri-arrow-right-line arr"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--------------- home section ends--------------------------->
+      <!--------------- home section ends--------------------------->
 
-    <!--------------- category section starts --------------------------->
-
-    <!-- <section class="category">
-      <h1 class="heading">Machines</h1>
-
-      <div class="scl"></div>
-
-      <div class="carousel-wrapper">
-        <span id="item-1"></span>
-        <span id="item-2"></span>
-        <span id="item-3"></span>
-        <span id="item-4"></span>
-        <span id="item-5"></span>
-        <div class="carousel-item item-1">
-          <img src="./images/equips/tractor.png" alt="" />
-          <div id="trac" class="specs infospecs">
-            <h2>Tractor ></h2>
-            <div class="desc">
-              <div class="dl">
-                <h4>Starting at :</h4>
-                <p>
-                  3,40,000 /- <br />
-                  *Ex showroom Delhi
-                </p>
-              </div>
-              <div class="ul"></div>
-              <div class="dl">
-                <h4>Engine :</h4>
-                <p>
-                  3200 BHP, <br />
-                  1800cc
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="#item-4" class="arrow-prev arrow"
-            ><i class="ri-arrow-left-s-line"></i
-          ></a>
-          <a href="#item-2" class="arrow-next arrow"
-            ><i class="ri-arrow-right-s-line"></i
-          ></a>
-        </div>
-        <div class="carousel-item item-2">
-          <img src="./images/equips/fertilizer spreader machine.png" alt="" />
-          <div id="spread" class="specs infospecs">
-            <h2>Spreader ></h2>
-            <div class="desc">
-              <div class="dl">
-                <h4>Starting at :</h4>
-                <p>
-                  2,16,000 /- <br />
-                  *Ex showroom Delhi
-                </p>
-              </div>
-              <div class="ul"></div>
-              <div class="dl">
-                <h4>Engine :</h4>
-                <p>
-                  1000 BHP, <br />
-                  800cc
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="#item-1" class="arrow-prev arrow"
-            ><i class="ri-arrow-left-s-line"></i
-          ></a>
-          <a href="#item-3" class="arrow-next arrow"
-            ><i class="ri-arrow-right-s-line"></i
-          ></a>
-        </div>
-        <div class="carousel-item item-3">
-          <img src="./images/equips/hay baler machine.png" alt="" />
-          <div id="baler" class="specs infospecs">
-            <h2>Baler ></h2>
-            <div class="desc">
-              <div class="dl">
-                <h4>Starting at :</h4>
-                <p>
-                  3,00,000 /- <br />
-                  *Ex showroom Delhi
-                </p>
-              </div>
-              <div class="ul"></div>
-              <div class="dl">
-                <h4>Engine :</h4>
-                <p>
-                  2300 BHP, <br />
-                  1500cc
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="#item-2" class="arrow-prev arrow"
-            ><i class="ri-arrow-left-s-line"></i
-          ></a>
-          <a href="#item-4" class="arrow-next arrow"
-            ><i class="ri-arrow-right-s-line"></i
-          ></a>
-        </div>
-        <div class="carousel-item item-4">
-          <img src="./images/equips/harvestor.png" alt="" />
-          <div id="baler" class="specs infospecs">
-            <h2>Harvestor ></h2>
-            <div class="desc">
-              <div class="dl">
-                <h4>Starting at :</h4>
-                <p>
-                  3,00,000 /- <br />
-                  *Ex showroom Delhi
-                </p>
-              </div>
-              <div class="ul"></div>
-              <div class="dl">
-                <h4>Engine :</h4>
-                <p>
-                  2300 BHP, <br />
-                  1500cc
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="#item-3" class="arrow-prev arrow"
-            ><i class="ri-arrow-left-s-line"></i
-          ></a>
-          <a href="#item-5" class="arrow-next arrow"
-            ><i class="ri-arrow-right-s-line"></i
-          ></a>
-        </div>
-        <div class="carousel-item item-5">
-          <img src="./images/equips/harrow_img.png" alt="" />
-          <div id="baler" class="specs infospecs">
-            <h2>Harrow ></h2>
-            <div class="desc">
-              <div class="dl">
-                <h4>Starting at :</h4>
-                <p>
-                  3,00,000 /- <br />
-                  *Ex showroom Delhi
-                </p>
-              </div>
-              <div class="ul"></div>
-              <div class="dl">
-                <h4>Power :</h4>
-                <p>2300 running,p></p>
-              </div>
-            </div>
-          </div>
-          <a href="#item-4" class="arrow-prev arrow"
-            ><i class="ri-arrow-left-s-line"></i
-          ></a>
-          <a href="#item-1" class="arrow-next arrow"
-            ><i class="ri-arrow-right-s-line"></i
-          ></a>
-        </div>
-      </div>
-
-      <div class="podium"></div>
-
-      <div class="pro_btns">
-        <button class="btns btn" type="submit">BUY NOW</button>
-      ------------ <button class="btns btn" type="submit">RENT</button>------------------------- 
-      </div>
-    </section> -->
-
-    <div class="cBody">
+      <!--------------- category section starts --------------------------->
+     <div class="cBody">
       <h1 class="heading">Machines</h1>
       <div class="carousel">
         <button id="left" class="carousel-button">
@@ -441,532 +283,558 @@
       
     </div>
 
+          <div class="podium"></div>
 
-    <!--------------- category section ends--------------------------->
-
-    <!--------------- shop section starts --------------------------->
-
-    <section class="products" id="products">
-      <h1 class="heading">Equipments</h1>
-
-      <div class="swiper product-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide">
-            <div class="image">
-              <div class="photo">
-                <img src="images/equips/axe.png" alt="" />
-              </div>
-              <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-              </div>
-            </div>
-            <div class="content">
-              <h3>Axe</h3>
-              <div class="price">₹599</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
+          <div class="pro_btns">
+            <button class="btns btn" type="submit">BUY NOW</button>
+            <!-- ------------ <button class="btns btn" type="submit">RENT</button>------------------------- -->
           </div>
-
-          <div class="swiper-slide slide">
-            <div class="image">
-              <div class="photo">
-                <img
-                  style="width: 15vmax"
-                  src="images/equips/backpack sprayer.png"
-                  alt=""
-                />
-              </div>
-              <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-              </div>
-            </div>
-            <div class="content">
-              <h3>Backpack Sprayer</h3>
-              <div class="price">₹2999</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="image">
-              <div class="photo">
-                <img style="width: 15vmax" src="images/equips/hoe.png" alt="" />
-              </div>
-              <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-              </div>
-            </div>
-            <div class="content">
-              <h3>Garden Hoe</h3>
-              <div class="price">₹999</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="image">
-              <div class="photo">
-                <img
-                  style="width: 15vmax"
-                  src="images/equips/mattock.png"
-                  alt=""
-                />
-              </div>
-              <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-              </div>
-            </div>
-            <div class="content">
-              <h3>Mattock</h3>
-              <div class="price">₹799</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="image">
-              <div class="photo">
-                <img
-                  style="width: 15vmax"
-                  src="images/equips/rake.png"
-                  alt=""
-                />
-              </div>
-              <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-              </div>
-            </div>
-            <div class="content">
-              <h3>Rake</h3>
-              <div class="price">₹899</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="image">
-              <div class="photo">
-                <img
-                  style="width: 15vmax"
-                  src="images/equips/scythe.png"
-                  alt=""
-                />
-              </div>
-              <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-              </div>
-            </div>
-            <div class="content">
-              <h3>Scythe</h3>
-              <div class="price">₹789</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        </section>
       </div>
-    </section>
 
-    <!--------------- shop section ends--------------------------->
+      <!--------------- category section ends--------------------------->
 
-    <!--------------- packages section starts --------------------------->
+      <!--------------- shop section starts --------------------------->
 
-    <section class="packages" id="packages">
-      <h1 class="heading">Rental Services</h1>
+      <section class="products" id="products">
+        <h1 class="heading">Equipments</h1>
 
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="images/service/tractor_service.webp" alt="" />
-          </div>
-          <div class="content">
-            <h3>Tractor</h3>
-            <div class="service_desc">
-              <div class="ser_des">
-                <p>5900cc power engine</p>
-                <p>50HP 3-cylinder</p>
-                <p>Lifting Capacity:- 1800 Kg</p>
-                <p>Single Dry Disc Friction</p>
-                <div class="price">Starts from ₹599/hrs</div>
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="image">
+                <div class="photo">
+                  <img src="images/equips/axe.png" alt="" />
+                </div>
+                <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-share"></a>
+                </div>
               </div>
-              <div class="ser_des rff">
-                <p><i> Starts from ₹599/hrs</i></p>
-                <p><i>book just @₹5</i></p>
-                <a href="#" class="btn rent_btn">Book Now</a>
+              <div class="content">
+                <h3>Axe</h3>
+                <div class="price">₹599</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <div class="photo">
+                  <img
+                    style="width: 15vmax"
+                    src="images/equips/backpack sprayer.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-share"></a>
+                </div>
+              </div>
+              <div class="content">
+                <h3>Backpack Sprayer</h3>
+                <div class="price">₹2999</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <div class="photo">
+                  <img
+                    style="width: 15vmax"
+                    src="images/equips/hoe.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-share"></a>
+                </div>
+              </div>
+              <div class="content">
+                <h3>Garden Hoe</h3>
+                <div class="price">₹999</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <div class="photo">
+                  <img
+                    style="width: 15vmax"
+                    src="images/equips/mattock.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-share"></a>
+                </div>
+              </div>
+              <div class="content">
+                <h3>Mattock</h3>
+                <div class="price">₹799</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <div class="photo">
+                  <img
+                    style="width: 15vmax"
+                    src="images/equips/rake.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-share"></a>
+                </div>
+              </div>
+              <div class="content">
+                <h3>Rake</h3>
+                <div class="price">₹899</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <div class="photo">
+                  <img
+                    style="width: 15vmax"
+                    src="images/equips/scythe.png"
+                    alt=""
+                  />
+                </div>
+                <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-share"></a>
+                </div>
+              </div>
+              <div class="content">
+                <h3>Scythe</h3>
+                <div class="price">₹789</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!--------------- shop section ends--------------------------->
+
+      <!--------------- packages section starts --------------------------->
+
+      <section class="packages" id="packages">
+        <h1 class="heading">Rental Services</h1>
+
+        <div class="box-container">
+          <div class="box">
+            <div class="image">
+              <img src="images/service/tractor_service.webp" alt="" />
+            </div>
+            <div class="content">
+              <h3>Tractor</h3>
+              <div class="service_desc">
+                <div class="ser_des">
+                  <p>5900cc power engine</p>
+                  <p>50HP 3-cylinder</p>
+                  <p>Lifting Capacity:- 1800 Kg</p>
+                  <p>Single Dry Disc Friction</p>
+                  <div class="price">Starts from ₹599/hrs</div>
+                </div>
+                <div class="ser_des rff">
+                  <p><i> Starts from ₹599/hrs</i></p>
+                  <p><i>book just @₹5</i></p>
+                  <a href="#" class="btn rent_btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service/harvester_service.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Harvester</h3>
+              <div class="service_desc">
+                <div class="ser_des">
+                  <p>Standard TSC - 513</p>
+                  <p>CMVR available</p>
+                  <p>Width (mm) - 3655</p>
+                  <p>Easy dismantling</p>
+                  <p></p>
+                  <div class="price">Starts from ₹599/hrs</div>
+                </div>
+                <div class="ser_des rff">
+                  <p><i> Starts from ₹599/hrs</i></p>
+                  <p><i>book just @₹5</i></p>
+                  <a href="#" class="btn rent_btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service/plow_service.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Plough</h3>
+              <div class="service_desc">
+                <div class="ser_des">
+                  <p>cut width 500-550 mm</p>
+                  <p>50-60 HP to 85-100 HP</p>
+                  <p>291 to 475Kg loadable</p>
+                  <p>8 blades system</p>
+                  <p></p>
+                  <div class="price">Starts from ₹599/hrs</div>
+                </div>
+                <div class="ser_des rff">
+                  <p><i> Starts from ₹599/hrs</i></p>
+                  <p><i>book just @₹5</i></p>
+                  <a href="#" class="btn rent_btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service/harrow_service.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Disc Harrow</h3>
+              <div class="service_desc">
+                <div class="ser_des">
+                  <p>22" or 24 " x 4 mm dia</p>
+                  <p>31-40 HP power</p>
+                  <p>Front: Notched : Plain</p>
+                  <p>2000 working width</p>
+                  <div class="price">Starts from ₹599/hrs</div>
+                </div>
+                <div class="ser_des rff">
+                  <p><i> Starts from ₹599/hrs</i></p>
+                  <p><i>book just @₹5</i></p>
+                  <a href="#" class="btn rent_btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service/spreder_service.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Spreader</h3>
+              <div class="service_desc">
+                <div class="ser_des">
+                  <p>KAFS-50 model</p>
+                  <p>8000-14000 Working width</p>
+                  <p>63 kg maximum weight</p>
+                  <p>357 Capacity</p>
+                  <div class="price">Starts from ₹599/hrs</div>
+                </div>
+                <div class="ser_des rff">
+                  <p><i> Starts from ₹599/hrs</i></p>
+                  <p><i>book just @₹5</i></p>
+                  <a href="#" class="btn rent_btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="images/service/baler_service.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Baler</h3>
+              <div class="service_desc">
+                <div class="ser_des">
+                  <p>1175 pickup width</p>
+                  <p>26 – 33 kW power</p>
+                  <p>1050 chambers</p>
+                  <p>540 PTO speed</p>
+                  <div class="price">Starts from ₹599/hrs</div>
+                </div>
+                <div class="ser_des rff">
+                  <p><i> Starts from ₹599/hrs</i></p>
+                  <p><i>book just @₹5</i></p>
+                  <a href="#" class="btn rent_btn">Book Now</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="box">
-          <div class="image">
-            <img src="images/service/harvester_service.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>Harvester</h3>
-            <div class="service_desc">
-              <div class="ser_des">
-                <p>Standard TSC - 513</p>
-                <p>CMVR available</p>
-                <p>Width (mm) - 3655</p>
-                <p>Easy dismantling</p>
-                <p></p>
-                <div class="price">Starts from ₹599/hrs</div>
-              </div>
-              <div class="ser_des rff">
-                <p><i> Starts from ₹599/hrs</i></p>
-                <p><i>book just @₹5</i></p>
-                <a href="#" class="btn rent_btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!--------------- packages section ends--------------------------->
 
-        <div class="box">
-          <div class="image">
-            <img src="images/service/plow_service.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>Plough</h3>
-            <div class="service_desc">
-              <div class="ser_des">
-                <p>cut width 500-550 mm</p>
-                <p>50-60 HP to 85-100 HP</p>
-                <p>291 to 475Kg loadable</p>
-                <p>8 blades system</p>
-                <p></p>
-                <div class="price">Starts from ₹599/hrs</div>
-              </div>
-              <div class="ser_des rff">
-                <p><i> Starts from ₹599/hrs</i></p>
-                <p><i>book just @₹5</i></p>
-                <a href="#" class="btn rent_btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!--------------- about section starts --------------------------->
 
-        <div class="box">
-          <div class="image">
-            <img src="images/service/harrow_service.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>Disc Harrow</h3>
-            <div class="service_desc">
-              <div class="ser_des">
-                <p>22" or 24 " x 4 mm dia</p>
-                <p>31-40 HP power</p>
-                <p>Front: Notched : Plain</p>
-                <p>2000 working width</p>
-                <div class="price">Starts from ₹599/hrs</div>
-              </div>
-              <div class="ser_des rff">
-                <p><i> Starts from ₹599/hrs</i></p>
-                <p><i>book just @₹5</i></p>
-                <a href="#" class="btn rent_btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section class="about" id="about">
+        <div class="left">
+          <h5>About us</h5>
+          <h1>Our team</h1>
+          <h3>Meet the entire team</h3>
+          <p>
+            we the team of hanuman coders have chosen this topic related to
+            farming as one of our team member vaibhavraj gupta used to face the
+            problem of buying and selling farming equipments when he use to live
+            with his family in his village phulera.
+          </p>
 
-        <div class="box">
-          <div class="image">
-            <img src="images/service/spreder_service.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>Spreader</h3>
-            <div class="service_desc">
-              <div class="ser_des">
-                <p>KAFS-50 model</p>
-                <p>8000-14000 Working width</p>
-                <p>63 kg maximum weight</p>
-                <p>357 Capacity</p>
-                <div class="price">Starts from ₹599/hrs</div>
-              </div>
-              <div class="ser_des rff">
-                <p><i> Starts from ₹599/hrs</i></p>
-                <p><i>book just @₹5</i></p>
-                <a href="#" class="btn rent_btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/service/baler_service.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>Baler</h3>
-            <div class="service_desc">
-              <div class="ser_des">
-                <p>1175 pickup width</p>
-                <p>26 – 33 kW power</p>
-                <p>1050 chambers</p>
-                <p>540 PTO speed</p>
-                <div class="price">Starts from ₹599/hrs</div>
-              </div>
-              <div class="ser_des rff">
-                <p><i> Starts from ₹599/hrs</i></p>
-                <p><i>book just @₹5</i></p>
-                <a href="#" class="btn rent_btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--------------- packages section ends--------------------------->
-
-    <!--------------- about section starts --------------------------->
-    
-    <section class="about" id="about">
-      <div class="left">
-        <h5>About us</h5>
-        <h1>Our team</h1>
-        <h3>Meet the entire team</h3>
-        <p>
-          we the team of hanuman coders have chosen this topic related to farming as one of our team member vaibhavraj gupta used to face the problem of buying and selling farming equipments when he use to live with his family in his village phulera.
-        </p>
-
-        <div class="downbox">
-          <div class="lft">
-            <h2>culture</h2>
-            <div class="line"></div>
-            <p>
-              while developing the project the environment was preety relaxed as the work was properly distributed amongs the team members.  
-            </p>
-            <p>
-              all the team members had full faith and beleif in our team lead Devendra dhote.
-            </p>
-          </div>
-          <div class="lft .rgt">
-            <h2>Workplace</h2>
-            <div class="line"></div>
-            <p>
-              as the topic that we selected is preety closed to nature, the place where we use to work was very quite and the environment used to be very soothing 
-            </p>
-            <p>
-              Peaceful environment is very necessary for coding and ideation of new thoughts.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <div class="up">
-          <!-- <img src="./images/groupframe.png" alt=""> -->
-        </div>
-        <div class="down">
-          <div class="l">
-            <div class="ll">
-              <video autoplay muted loop src="./videos/finalvid.mp4"></video>
-            </div>
-            <div class="lr">
-              <h3>Our lives</h3>
+          <div class="downbox">
+            <div class="lft">
+              <h2>culture</h2>
+              <div class="line"></div>
               <p>
-                working on this project help the team alot in connecting them with the real rural india.
+                while developing the project the environment was preety relaxed
+                as the work was properly distributed amongs the team members.
               </p>
-              <button type="submit">Full details</button>
+              <p>
+                all the team members had full faith and beleif in our team lead
+                Devendra dhote.
+              </p>
             </div>
-          </div>
-          <div class="r">
-            <h4>News <span id="more">More+</span></h4>
-            <h3>Product testing</h3>
-            <p>
-              our team analyzes the product from top to bottom to ensure the poduct quality, deliver best services and product to the coustomer.
-            </p>
-            <i class="ri-arrow-right-line"></i>
+            <div class="lft .rgt">
+              <h2>Workplace</h2>
+              <div class="line"></div>
+              <p>
+                as the topic that we selected is preety closed to nature, the
+                place where we use to work was very quite and the environment
+                used to be very soothing
+              </p>
+              <p>
+                Peaceful environment is very necessary for coding and ideation
+                of new thoughts.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!--------------- about section ends--------------------------->
-
-    <!--------------- reviews section starts --------------------------->
-
-    <section class="reviews" id="reviews">
-      <h1 class="heading">client's reviews</h1>
-
-      <div class="swiper review-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide">
-            <div class="user">
-              <img src="images/pic-1.png" alt="" />
-            </div>
-            <div class="starrr">
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-            </div>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              quidem laborum pariatur alias, culpa illum quaerat, aliquid
-              laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab
-              delectus dolorum ut recusandae ipsam?
-            </p>
-            <h1 class="coma">"</h1>
+        <div class="right">
+          <div class="up">
+            <!-- <img src="./images/groupframe.png" alt=""> -->
           </div>
-          <div class="swiper-slide slide">
-            <div class="user">
-              <img src="images/pic-4.png" alt="" />
+          <div class="down">
+            <div class="l">
+              <div class="ll">
+                <video autoplay muted loop src="./videos/finalvid.mp4"></video>
+              </div>
+              <div class="lr">
+                <h3>Our lives</h3>
+                <p>
+                  working on this project help the team alot in connecting them
+                  with the real rural india.
+                </p>
+                <button type="submit">Full details</button>
+              </div>
             </div>
-            <div class="starrr">
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
+            <div class="r">
+              <h4>News <span id="more">More+</span></h4>
+              <h3>Product testing</h3>
+              <p>
+                our team analyzes the product from top to bottom to ensure the
+                poduct quality, deliver best services and product to the
+                coustomer.
+              </p>
+              <i class="ri-arrow-right-line"></i>
             </div>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              quidem laborum pariatur alias, culpa illum quaerat, aliquid
-              laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab
-              delectus dolorum ut recusandae ipsam?
-            </p>
-            <h1 class="coma">"</h1>
-          </div>
-          <div class="swiper-slide slide">
-            <div class="user">
-              <img src="images/pic-2.png" alt="" />
-            </div>
-            <div class="starrr">
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-              <i class="ri-star-fill star"></i>
-            </div>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              quidem laborum pariatur alias, culpa illum quaerat, aliquid
-              laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab
-              delectus dolorum ut recusandae ipsam?
-            </p>
-            <h1 class="coma">"</h1>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--------------- reviews section ends--------------------------->
+      <!--------------- about section ends--------------------------->
 
-    <!--------------- newsletter section --------------------------->
+      <!--------------- reviews section starts --------------------------->
 
-    <section class="clients">
-      <div class="swiper clients-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide silde">
-            <img src="images/Partner/deere-logo-agriculture.svg" alt="" />
-          </div>
-          <div class="swiper-slide silde">
-            <img src="images/Partner/Farmtrac-Logo-mobile.png" alt="" />
-          </div>
-          <div class="swiper-slide silde">
-            <img class="diifimg" src="images/Partner/eicherlogo.jpg" alt="" />
-          </div>
-          <div class="swiper-slide silde">
-            <img src="images/Partner/sonalika-tractor-logo.png" alt="" />
+      <section class="reviews" id="reviews">
+        <h1 class="heading">client's reviews</h1>
+
+        <div class="swiper review-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="user">
+                <img src="images/pic-1.png" alt="" />
+              </div>
+              <div class="starrr">
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quidem laborum pariatur alias, culpa illum quaerat, aliquid
+                laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab
+                delectus dolorum ut recusandae ipsam?
+              </p>
+              <h1 class="coma">"</h1>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="user">
+                <img src="images/pic-4.png" alt="" />
+              </div>
+              <div class="starrr">
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quidem laborum pariatur alias, culpa illum quaerat, aliquid
+                laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab
+                delectus dolorum ut recusandae ipsam?
+              </p>
+              <h1 class="coma">"</h1>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="user">
+                <img src="images/pic-2.png" alt="" />
+              </div>
+              <div class="starrr">
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+                <i class="ri-star-fill star"></i>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quidem laborum pariatur alias, culpa illum quaerat, aliquid
+                laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab
+                delectus dolorum ut recusandae ipsam?
+              </p>
+              <h1 class="coma">"</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--------------- footer section starts --------------------------->
+      <!--------------- reviews section ends--------------------------->
 
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
-          <h3>quick links</h3>
-          <a href="#home">home</a>
-          <a href="#shop">Products</a>
-          <a href="#packages">Become a Seller</a>
-          <a href="#about">about</a>
-          <a href="#reviews">reviews</a>
-          <a href="#reviews">Help & Support</a>
+      <!--------------- newsletter section --------------------------->
+
+      <section class="clients">
+        <div class="swiper clients-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide silde">
+              <img src="images/Partner/deere-logo-agriculture.svg" alt="" />
+            </div>
+            <div class="swiper-slide silde">
+              <img src="images/Partner/Farmtrac-Logo-mobile.png" alt="" />
+            </div>
+            <div class="swiper-slide silde">
+              <img class="diifimg" src="images/Partner/eicherlogo.jpg" alt="" />
+            </div>
+            <div class="swiper-slide silde">
+              <img src="images/Partner/sonalika-tractor-logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------- footer section starts --------------------------->
+
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#shop">Products</a>
+            <a href="#packages">Become a Seller</a>
+            <a href="#about">about</a>
+            <a href="#reviews">reviews</a>
+            <a href="#reviews">Help & Support</a>
+          </div>
+
+          <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 8878588192 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 7354108663 </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i> hanuman_coders@gmail.com
+            </a>
+            <a href="#">
+              <i class="fas fa-map"></i> Bhopal, M.P, India - 462023
+            </a>
+          </div>
+
+          <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-github"></i> github </a>
+          </div>
         </div>
 
-        <div class="box">
-          <h3>contact info</h3>
-          <a href="#"> <i class="fas fa-phone"></i> +91 8878588192 </a>
-          <a href="#"> <i class="fas fa-phone"></i> +91 7354108663 </a>
-          <a href="#">
-            <i class="fas fa-envelope"></i> hanuman_coders@gmail.com
-          </a>
-          <a href="#">
-            <i class="fas fa-map"></i> Bhopal, M.P, India - 462023
-          </a>
-        </div>
-
-        <div class="box">
-          <h3>follow us</h3>
-          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-          <a href="#"> <i class="fab fa-github"></i> github </a>
-        </div>
-      </div>
-
-      <div class="credit">created by <span>Hanuman_Coders.</span></div>
-    </section>
+        <div class="credit">created by <span>Hanuman_Coders.</span></div>
+      </section>
+    </div>
 
     <!--------------- footer section ends--------------------------->
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
     <!--------------- custom js file link --------------------------->
     <script src="js/script.js"></script>
