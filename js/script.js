@@ -4,16 +4,16 @@ let all = document.querySelector("#smooth-wrapper");
 let lod = document.querySelector(".lod");
 
 
-preloader.style.display = "initial"
+// preloader.style.display = "initial"
 
-all.style.opacity ="0.1"
+// all.style.opacity ="0.1"
 
-setTimeout(() => {
-  all.style.opacity ="1"
-  preloader.style.display = "none"
-  lod.style.display = "none"
+// setTimeout(() => {
+//   all.style.opacity ="1"
+//   preloader.style.display = "none"
+//   lod.style.display = "none"
 
-}, 1500);
+// }, 1500);
 
 document.querySelector("#menu-btn").onclick = () => {
   navbar.classList.add("active");
@@ -198,9 +198,20 @@ var swiper = new Swiper(".clients-slider", {
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+gsap.from(".category .heading",{
+    x:200,
+    duration:1,
+    ScrollTrigger:{
+        trigger:".category .heading",
+        markers:true
+    }
+})
+
+
 var tractor = document.querySelector(".carousel-wrapper .item-1");
 
-setTimeout(() => {
+// setTimeout(() => {
   gsap.from("header .navbar a,.search_bar, .icons", {
     duration: 2.5,
     scale: 0.8,
@@ -238,10 +249,25 @@ setTimeout(() => {
     duration: 0.3,
   });
 
-},1200);
+// },1200);
 
+var tl2 = gsap.timeline({
+  ScrollTrigger: {
+      trigger : document.querySelector("#smooth-content"),
+      start : "top 50%",
+      markers : true,
+  }
+});
 
-
-// tl.to(document.querySelector("#head1"), { x: -600, duration: 2 });
-// tl.to(document.querySelector("#head2"), { x:-600, duration: 1 });
-// tl.to(document.querySelector("#head3"), { x: -600, duration: 1 });
+tl2
+.from('#smooth-content .category .heading', {
+  y : 50,
+  opacity : 0,
+  ease : Expo.easeInOut,
+  duration : 0.5
+})
+.from('#main2 p', {
+  y : 50,
+  opacity : 0,
+  ease : Expo.easeInOut,
+})
