@@ -146,6 +146,7 @@ section {
   margin-bottom: rem;
   font-size: 4rem;
   color: #10221b;
+  opacity: 1;
 }
 
 /*---------------------------------------- Header section css ------------------------------------------------- */
@@ -1517,8 +1518,6 @@ section {
   align-items: center;
   height: 85vh;
   overflow: hidden;
-  width: 100%;
-  z-index: 22;
 }
 
 .carousel-main.slide-effect {
